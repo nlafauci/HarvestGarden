@@ -16,9 +16,11 @@ app.set('view engine', 'jsx')
 
 app.use('/plants', plantController)
 
+// ROUTES
 app.get('/', (req, res) => {
     res.send('Hello World')
 })
+
 
 app.get ('*', (req, res) => {
     res.status(404).send('<h1>404 Page</h1>')
