@@ -24,7 +24,19 @@ router.get('/', (req, res) => {
     res.render('plants/index', { plants })
 })
 
-  
+//GET New Plant Form
+router.get('/new', (req, res) => {
+    res.render('plants/new')
+})
+
+router.get('/:id', (req, res) => {
+    res.render('plants/:id')
+})
+
+router.post('/', (req, res) => {
+    console.log(req.body)
+    res.send('POST /plants')
+})
 
 // router.get('/')
 
