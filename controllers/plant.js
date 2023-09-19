@@ -1,4 +1,5 @@
 const router = require('express').Router()
+const db = require('../models')
 
 // router.get('/', async (req, res) => {
 //     const plants = await Plant.find().populate('plants')
@@ -7,6 +8,14 @@ const router = require('express').Router()
 
 //GET Plants
 router.get('/', (req, res) => {
+    db.Plant.find()
+    .then((plants) => {
+        res.render('plants/index', { plants })
+    })
+    .catch(err => {
+        console.log(err)
+        res.render('error404')
+      })
     //Plant Mock Data
     let plants = [{
         name: 'Tomato',
