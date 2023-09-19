@@ -55,5 +55,6 @@ Node.js
 Alison Salinas
 Sara Donnelly
 Nick LaFauci
+Richard McGirt
 Robert Nelson
 StackOverflow
