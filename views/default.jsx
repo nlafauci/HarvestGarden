@@ -32,6 +32,13 @@ function Def (html) {
           </ul>
         </nav>
             <div id="root">{html.children}</div>
+          <footer>
+          <ul>
+            <li>Plant</li>
+            <li>Plant</li>
+            <li>Plant</li>
+          </ul>
+        </footer>
             </body>
         </html>
     )
