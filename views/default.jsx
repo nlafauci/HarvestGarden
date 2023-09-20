@@ -16,16 +16,18 @@ function Def (html) {
         <link rel="stylesheet" href="/css/styles.css" />
       </head>
             <body>
+            <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" className="banner" alt="banner image" />
             <nav>
+            <label className="logo">HarvestGarden</label>
           <ul>
             <li>
-              <a href="/">HOME</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="/plants">DATABASE</a>
+              <a href="/plants">Database</a>
             </li>
             <li>
-              <a href="/plants/new">ADD FLORA</a>
+              <a href="/plants/new">Contribute</a>
             </li>
           </ul>
         </nav>
