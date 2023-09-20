@@ -1,3 +1,224 @@
-{
-    border: 1px;
-}
+body { 
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    font-family: Prompt;
+  }
+  
+  main { 
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+  }
+  
+  .landing {
+    filter: blur(1.5px);
+  }
+  .philosophy-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 100px;
+  }
+  
+  .philosophy {
+    margin-top: 4em;
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px; 
+  }
+  
+  .articleOne {
+    grid-column: 1;
+    animation: fadeIn 7s;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .articleTwo {
+    grid-column: 2;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  #root {
+    min-height: 100%;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 8em;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(28, 178, 28); 
+    text-shadow:0 0 5px rgba(0, 0, 0, 0.8);
+    transition: text-shadow 0.4s ease-in-out;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 210px;
+    z-index: 1;
+    height: 11.5em;
+    background: white;
+    padding-top: 15px;
+    text-align: right;
+    text-decoration: none;
+    font-family: Prompt;
+    font-style: italic;
+    color: black;
+  }
+    
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+    
+  nav li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  
+  nav a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: text-shadow 0.4s ease;
+  }
+  
+  nav a:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 1.13em;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    font-size: 1.1rem;
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 35px;
+  }
+  
+    img {
+    width: 75%; 
+    display: block; 
+    margin: auto;
+    border-radius: 15%;
+  }
+  
+  .btn {
+    background-color: black;
+    border-color: black;
+    color: white;
+    margin-bottom: 50px;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: background-color 1s ease;
+  }
+  
+  .form-control {
+    text-align: center;
+  }
+  
+  .form-range {
+    max-width: 300px;
+    margin: 15px;
+    padding: 0.25rem;
+  }
+  
+  .form-check-input {
+    font-size: 1.25em;
+    margin-left: 10px;
+  }
+  
+  .col-md-4 {
+    max-width: 450px;
+    margin: 10 auto;
+    padding: .25rem;
+    font-size: 1.3rem;
+  }
+  
+  .footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    width: 100%;
+    height: 3em;
+    line-height: 1em !important;
+    background: white;
+    color: black !important;
+    font-size: 1em;
+  }
+  
+  #subtitle {
+    font-size: x-small;
+    font-weight: lighter;
+  }

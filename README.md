@@ -5,11 +5,11 @@ HarvestGarden is a gardeners dream come true! Plant-enthusiasts can search an ex
 
 ## Key Features: 
 
-**Plant Database:** 
+**Plant Database:** An extensive database of plants created by a unique combination of moderators and the community to document successful growth guidelines as well as tips and tricks. 
 
-**Field Notes:** 
+<!-- **Field Notes:** 
 
-**Gardening Community:**
+**Gardening Community:** -->
 
 | Method | Path | Purpose |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ HarvestGarden is a gardeners dream come true! Plant-enthusiasts can search an ex
 ...
 
 ## Technologies: 
-BootStrap
+<!-- BootStrap -->
 React 
 Express
 Mongoose
@@ -44,10 +44,10 @@ MongoDB
 Node.js
 
 ## Sources:
-**Image Assets:** 
+<!-- **Image Assets:** 
 
 
-**Video References:**
+**Video References:** -->
 
 
 
@@ -55,5 +55,8 @@ Node.js
 Alison Salinas
 Sara Donnelly
 Nick LaFauci
+Richard McGirt
 Robert Nelson
 StackOverflow
+Ricardo Carr 
+
