@@ -298,3 +298,7 @@ footer ul li a {
     font-size: x-small;
     font-weight: lighter;
 }
+
+form {
+    padding: 20px;
+}
