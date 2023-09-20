@@ -33,11 +33,21 @@ function Def (html) {
         </nav>
             <div id="root">{html.children}</div>
           <footer>
-          <ul>
-            <li>Plant</li>
-            <li>Plant</li>
-            <li>Plant</li>
-          </ul>
+          <div className="container">
+<span className="my-info">
+  ✦ HarvestGarden ✦
+  <p className="copyright">
+    Copyright HarvestGarden-
+    {new Date().getFullYear()}
+  </p>
+  <p>
+    <img src="../images/HGFavicon.png" alt="HarvestGarden Logo" />
+  </p>
+  <div id="subtitle">
+            We love our plant community!
+          </div>
+</span>
+</div>
         </footer>
             </body>
         </html>
