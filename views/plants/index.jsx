@@ -8,7 +8,7 @@ function index (data) {
           <h2>{plant.name}</h2>
           <h3>Light Needed: {plant.light}</h3>
           <h3>Water Needed: {plant.water}</h3>
-          <img src={plant.pic} alt={plant.name}/>
+          <img src={plant.image} alt={plant.name}/>
         </div>
       )
     })
