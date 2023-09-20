@@ -1,11 +1,5 @@
 const router = require('express').Router()
 const db = require('../models')
-const plant = require('../models/plant')
-
-// router.get('/', async (req, res) => {
-//     const plants = await Plant.find().populate('plants')
-//     res.json(plants)
-// })
 
 //GET Plants
 router.get('/', (req, res) => {
@@ -21,7 +15,8 @@ router.get('/', (req, res) => {
 
 //GET New Plant Form
 router.get('/new', (req, res) => {
-    res.render('plants/new')
+    const plants = db.Plant.find()
+    res.render('plants/new', { plants })
 })
 
 router.get('/:id', (req, res) => {
