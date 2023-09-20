@@ -27,16 +27,16 @@ function home () {
           <div className="articleOne">
             <img className="articleOneImage" src="/images/redwood.jpg" alt="Article One" />
             <div className="container">
-              <h4>inserting some words</h4>
-              <p>inserting some words here because reasons...</p>
+              <h4>Our Mission</h4>
+              <p>This page started on the foundation that we wanted to educate, encourage, and progress plant cultivation from where it currently stands. We believe that gardening and agriculture are the key to providing for a better future and want to help support farmers, gardeners, and others who share in that same vision. </p>
             </div>
           </div>
 
           <div className="articleTwo">
             <img className="articleTwoImage" src="/images/redwood.jpg" alt="Article Two" />
             <div className="container">
-              <h4>inserting some words</h4>
-              <p>inserting some words here because reasons...</p>
+              <h4>Services</h4>
+              <p>This site includes plant species and subspecies, water and light specifications of plants, and whether these plants are best suited for indoors and outdoors. Viewers can comment and submit queries about their specific methods of growing these plants, which are moderated by the site team.</p>
             </div>
           </div>
         </div>
