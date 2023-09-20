@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const db = require('../models')
 
-//GET Plants
+//GET All Plants
 router.get('/', (req, res) => {
     db.Plant.find()
     .then((plants) => {
@@ -19,6 +19,7 @@ router.get('/new', (req, res) => {
     res.render('plants/new', { plants })
 })
 
+// GET Plant by Id
 router.get('/:id', (req, res) => {
     db.Plant.findById(req.params.id)
     .then(plant => {
@@ -30,15 +31,17 @@ router.get('/:id', (req, res) => {
     })
 })
 
-router.post('/', (req, res) => {
-    console.log(req.body)
-    res.send('POST /plants')
-})
+// POST Create new Plant
+// router.post('/', (req, res) => {
+//     db.Plant.create(req.body)
+//     .then(() => {
+//       res.redirect('/plants/index')
+//     })
+//     .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//     })
+// })
 
-// router.get('/')
-
-// router.get('/')
-
-// router.get('/')
 
 module.exports = router

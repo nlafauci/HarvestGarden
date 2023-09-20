@@ -31,7 +31,7 @@ plantSchema.methods.isIndoorParagraph = function() {
 }
 
 plantSchema.methods.needsLightParagraph = function() {
-    return `${this.needsLight} needs if(plant ) light`
+    return `${this.needsLight} needs light`
   }
 
 module.exports = mongoose.model('Plant', plantSchema)
