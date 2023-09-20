@@ -13,7 +13,7 @@ function Def (html) {
           crossOrigin="anonymous"
         ></link> 
                 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,800&family=Prompt:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
       </head>
             <body>
             <nav>
