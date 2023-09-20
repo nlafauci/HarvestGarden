@@ -25,7 +25,7 @@ function home () {
 
         <div className="articles">
           <div className="articleOne">
-            <img className="articleOneImage" src="/images/redwood.jpeg" alt="Article One" />
+            <img className="articleOneImage" src="/images/redwood.jpg" alt="Article One" />
             <div className="container">
               <h4>inserting some words</h4>
               <p>inserting some words here because reasons...</p>
@@ -33,7 +33,7 @@ function home () {
           </div>
 
           <div className="articleTwo">
-            <img className="articleTwoImage" src="/images/redwood.jpeg" alt="Article Two" />
+            <img className="articleTwoImage" src="/images/redwood.jpg" alt="Article Two" />
             <div className="container">
               <h4>inserting some words</h4>
               <p>inserting some words here because reasons...</p>
