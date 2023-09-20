@@ -273,7 +273,9 @@ h1 {
 footer {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8em;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(66, 66, 66, 0.688);
+    width: 100%;
+    margin-top: 10px;
 }
 footer ul {
     list-style-type: none;
@@ -301,4 +303,18 @@ footer ul li a {
 
 form {
     padding: 20px;
+    margin: 30px;
+}
+
+input {
+    width: 100%; 
+    padding: 10px 20px; 
+    margin: 8px 0; 
+    border: 2px solid rgb(28, 178, 28);
+    box-sizing: border-box;
+}
+
+input:focus {
+    background-color:rgb(33, 212, 72);
+    border: 3pxsolid #555;
 }
