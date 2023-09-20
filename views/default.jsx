@@ -5,7 +5,7 @@ function Def (html) {
         <html>
 <head>
         <title>{html.title}</title>
-        <link rel="icon" type="image/png" href="../images/rantFavicon.png" />
+        <link rel="icon" type="image/png" href="../images/HGFavicon.png" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
