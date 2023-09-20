@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
-function new_plant () {
+function new_plant() {
     return (
         <Def>
             <main>
@@ -12,20 +12,20 @@ function new_plant () {
                         <input id="name" name="name" required/>
                     </div>
                     <div>
-                        <label htmlFor="light">Light Exposure Needed</label>
-                        <input id="light" name="light" required/>
+                        <label htmlFor="needsLight">Light Exposure Needed</label>
+                        <input id="needsLight" name="needsLight" required/>
                     </div>
                     <div>
-                        <label htmlFor="water">Water Amount</label>
-                        <input id="water" name="water" required/>
+                        <label htmlFor="needsWater">Water Amount Needed</label>
+                        <input id="needsWater" name="needsWater" required/>
                     </div>
                     <div>
-                        <label htmlFor="pic">Plant Picture</label>
-                        <input type="url" id="pic" name="pic" />
+                        <label htmlFor="image">Plant Picture</label>
+                        <input type="url" id="image" name="image" />
                     </div>
                     <div>
-                        <label htmlFor="season">Planting Season</label>
-                        <input id="season" name="season" required/>
+                        <label htmlFor="isIndoor">Is it an indoor plant?</label>
+                        <input id="isIndoor" name="isIndoor" required/>
                     </div>
                     <input type="submit" value="Add Plant" />
                 </form>

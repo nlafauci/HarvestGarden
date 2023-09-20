@@ -1,6 +1,7 @@
 const db = require('../models');
-
-db.Plant.create([{
+db.Place.deleteMany()
+.then(() => {
+    db.Plant.create([{
         name: 'Saguaro Cactus',
         isIndoor: false,
         needsLight: '9',
@@ -45,3 +46,4 @@ db.Plant.create([{
         console.log('Failure!', err)
         process.exit()
     })
+})
