@@ -277,6 +277,7 @@ footer {
     width: 100%;
     margin-top: 10px;
 }
+
 footer ul {
     list-style-type: none;
     margin: 0;
@@ -316,5 +317,18 @@ input {
 
 input:focus {
     background-color:rgb(33, 212, 72);
-    border: 3pxsolid #555;
+    border: 3px solid #555;
+}
+
+select {
+    width: 100%;
+    padding: 10px 20px; 
+    margin: 8px 0; 
+    border: 2px solid rgb(28, 178, 28);
+    box-sizing: border-box
+}
+
+select:focus {
+    background-color: rgb(28, 178, 28);
+    border: 3px solid #555;
 }
