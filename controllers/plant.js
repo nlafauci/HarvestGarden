@@ -45,7 +45,7 @@ router.put('/:id', (req, res) => {
 router.post('/:id/comment', (req, res) => {
     console.log(req.body)
     req.body.rant = req.body.rant ? true : false
-    db.Place.findById(req.params.id)
+    db.Plant.findById(req.params.id)
     .then(plant => {
         db.Comment.create(req.body)
         .then(comment => {
@@ -53,7 +53,7 @@ router.post('/:id/comment', (req, res) => {
             plant.save()
             .then(() => {
               console.log(["test"])
-                res.redirect(`/places/${req.params.id}`)
+                res.redirect(`/plants/${req.params.id}`)
             })
             .catch(err => {
               console.log(err)
