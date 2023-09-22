@@ -25,6 +25,15 @@ const Registration = () => {
             required
             className="registration-input"
           />
+
+<label htmlFor="password">Password confirm:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            className="registration-input"
+          />
           <br />
           <button type="submit" className="registration-button">
             Register
