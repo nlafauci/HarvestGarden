@@ -31,6 +31,45 @@ router.get('/:id', (req, res) => {
     })
 })
 
+router.put('/:id', (req, res) => {
+    db.Plant.findByIdAndUpdate(req.params.id, req.body)
+    .then(() => {
+        res.redirect(`/plants/${req.params.id}`)
+    })
+    .catch(err => {
+        console.log('err', err)
+        res.render('error404')
+    })
+})
+
+router.post('/:id/comment', (req, res) => {
+    console.log(req.body)
+    req.body.rant = req.body.rant ? true : false
+    db.Place.findById(req.params.id)
+    .then(plant => {
+        db.Comment.create(req.body)
+        .then(comment => {
+            plant.comments.push(comment.id)
+            plant.save()
+            .then(() => {
+              console.log(["test"])
+                res.redirect(`/places/${req.params.id}`)
+            })
+            .catch(err => {
+              console.log(err)
+              res.render('error404')
+              })
+          
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+    })
+    .catch(err => {
+        res.render('error404')
+    })
+  })
+
 // POST Create new Plant
 // router.post('/', (req, res) => {
 //     db.Plant.create(req.body)
