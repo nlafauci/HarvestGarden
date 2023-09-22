@@ -34,8 +34,8 @@ function home() {
           <div className="articleTwo">
             <img className="articleImage" src="https://images.unsplash.com/photo-1624668430039-0175a0fbf006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Article Two" />
             <div className="container">
-              <h4>Services</h4>
-              <p>This site includes plant species and subspecies, water and light specifications of plants, and whether these plants are best suited for indoors and outdoors. Viewers can comment and submit queries about their specific methods of growing these plants, which are moderated by the site team.</p>
+              <h4>Services and Scoring System</h4>
+              <p>This site includes plant species and subspecies, water and light specifications of plants, and whether these plants are best suited for indoors and outdoors. Viewers can comment and submit queries about their specific methods of growing these plants, which are moderated by the site team. Scores are given to plants based on a scale of 0-10 on how much or how little they need of a specific need, such as water and sunlight. </p>
             </div>
           </div>
         </div>
