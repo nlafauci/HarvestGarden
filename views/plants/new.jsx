@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
-function new_plant() {
+function new_plant(data) {
     return (
         <Def>
             <main>
@@ -13,11 +13,31 @@ function new_plant() {
                     </div>
                     <div>
                         <label htmlFor="needsLight">Light Exposure Needed</label>
-                        <input id="needsLight" name="needsLight" required/>
+                        <select 
+                        id="needsLight" 
+                        name="needsLight"
+                        // value={data.plant.needsLight} 
+                        onChange={(event) => {
+                            data.plant.needsLight = event.target.value
+                        }}
+                        required>
+                        <option value="direct sunlight (indoors)">Direct Sunlight</option>
+                        <option value="indirect sunlight (indoors)">Indirect Sunlight</option>
+                        <option value="full sunlight (outdoors)">Full Sunlight</option>
+                        <option value="partial sunlight (outdoors)">Partial Sunlight</option>
+                       </select>
                     </div>
                     <div>
                         <label htmlFor="needsWater">Water Amount Needed</label>
-                        <input id="needsWater" name="needsWater" required/>
+                        <select 
+                        id="needsWater" 
+                        name="needsWater" 
+                        required>
+                            <option value="water daily">Water Daily</option>
+                            <option value="water every other day">Water Every Other Day</option>
+                            <option value="water weekly">Water Weekly</option>
+                            <option value="water every other week">Water Every Other Week</option>
+                        </select>
                     </div>
                     <div>
                         <label htmlFor="image">Plant Picture</label>
@@ -25,7 +45,7 @@ function new_plant() {
                     </div>
                     <div>
                         <label htmlFor="isIndoor">Is it an indoor plant?</label>
-                        <input id="isIndoor" name="isIndoor" required/>
+                        <input type="checkbox" id="isIndoor" name="isIndoor" required defaultChecked/>
                     </div>
                     <input type="submit" value="Add Plant" />
                 </form>
