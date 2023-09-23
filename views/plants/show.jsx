@@ -29,7 +29,6 @@ function show (data) {
         comments = data.plant.comments.map(c => {
           return (
             <div className="border">
-              <h2 className="yay">{c.rant ? 'Yay' : 'Nay'}</h2>
               <h4>{c.content}</h4>
               <h3>
                 <stong>- {c.author}</stong>
