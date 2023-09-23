@@ -1,9 +1,9 @@
 const React = require('react')
 const Def = require('../default.jsx')
 
-function edit_form() {
+function edit_form({user}) {
     return (
-        <Def title="Edit Plant Data">
+        <Def user={user} title="Edit Plant Data">
             <main>
                 <h1>Edit Plant</h1>
             </main>
