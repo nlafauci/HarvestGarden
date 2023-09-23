@@ -43,7 +43,7 @@ function show (data) {
             <main>
                 <div className="row">
                     <div className="col-sm-6">
-                        <img src= {data.plant.image} alt= {data.plant.name} />
+                        <img src= {data.plant.image} alt= {data.plant.name} className="showImg" />
                         <h3> 
                             {data.plant.name} 
                         </h3>
