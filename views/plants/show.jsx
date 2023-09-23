@@ -2,6 +2,43 @@ const React = require('react')
 const Def = require('../default')
 
 function show (data) {
+    let comments = (
+        <h3 className="inactive">
+            No comments yet!
+        </h3>
+    )
+    let rating = (
+        <h3 className="inactive">
+            Not yet rated
+        </h3>
+    )
+    if (data.plant.comments.length) {
+        let sumRatings = data.plant.comments.reduce((tot, c) => {
+            return tot + c.stars
+          }, 0)
+          let averageRating = Math.round(sumRatings / data.plant.comments.length)
+          let stars = ''
+          for (let i = 0; i < averageRating; i++) {
+            stars += 'â­ï¸'
+          }
+          rating = (
+            <h3>
+              {stars} stars
+            </h3>
+          )
+        comments = data.plant.comments.map(c => {
+          return (
+            <div className="border">
+              <h2 className="yay">{c.rant ? 'Yay' : 'Nay'}</h2>
+              <h4>{c.content}</h4>
+              <h3>
+                <stong>- {c.author}</stong>
+              </h3>
+              <h4>Rating: {c.stars}</h4>
+            </div>
+          )
+        })
+      }
     return ( 
         <Def>
             <main>
@@ -31,6 +68,7 @@ function show (data) {
                     </div>
                 </div>
                 <h1>Comments</h1>
+                {comments}
                     <form method="POST" action={`/plants/${data.plant.id}/comment`}>
                     <div className="form-group">
                         <label htmlFor="content"> Content </label>

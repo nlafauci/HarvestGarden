@@ -7,3 +7,4 @@ mongoose.connect(process.env.MONGO_URI, {
 })
 
 module.exports.Plant = require('./plant')
+module.exports.Comment = require('./comment')
