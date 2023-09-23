@@ -10,9 +10,9 @@ async function seed() {
         content: 'I recommend cultivating this plant because of its easy growing method.'
     })
 
-    place.comments.push(comment.id)
+    plant.comments.push(comment.id)
 
-    await place.save()
+    await plant.save()
     
     process.exit()
 }
