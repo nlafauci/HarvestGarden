@@ -18,7 +18,9 @@ function Def(html) {
       <body>
         <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" className="banner" alt="banner image" />
         <nav>
-          <label className="logo">HarvestGarden</label>
+          <a href="/">
+            <label className="logo">HarvestGarden</label>
+          </a>
           <ul>
             <li>
               <a href="/">Home</a>

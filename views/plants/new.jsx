@@ -21,10 +21,10 @@ function new_plant(data) {
                             data.plant.needsLight = event.target.value
                         }}
                         required>
-                        <option value="direct sunlight (indoors)">Direct Sunlight</option>
-                        <option value="indirect sunlight (indoors)">Indirect Sunlight</option>
-                        <option value="full sunlight (outdoors)">Full Sunlight</option>
-                        <option value="partial sunlight (outdoors)">Partial Sunlight</option>
+                        <option value="Direct Sunlight">Direct Sunlight</option>
+                        <option value="Indirect Sunlight">Indirect Sunlight</option>
+                        <option value="Full Sunlight">Full Sunlight</option>
+                        <option value="Partial Sunlight">Partial Sunlight</option>
                        </select>
                     </div>
                     <div>
@@ -33,10 +33,10 @@ function new_plant(data) {
                         id="needsWater" 
                         name="needsWater" 
                         required>
-                            <option value="water daily">Water Daily</option>
-                            <option value="water every other day">Water Every Other Day</option>
-                            <option value="water weekly">Water Weekly</option>
-                            <option value="water every other week">Water Every Other Week</option>
+                            <option value="Water Daily">Water Daily</option>
+                            <option value="Water Every Other Day">Water Every Other Day</option>
+                            <option value="Water Weekly">Water Weekly</option>
+                            <option value="Water Every Other Week">Water Every Other Week</option>
                         </select>
                     </div>
                     <div>
@@ -46,6 +46,10 @@ function new_plant(data) {
                     <div>
                         <label htmlFor="isIndoor">Is it an indoor plant?</label>
                         <input type="checkbox" id="isIndoor" name="isIndoor" required defaultChecked/>
+                    </div>
+                    <div>
+                        <label htmlFor="description">Plant Description</label>
+                        <input id="description" name="description" required/>
                     </div>
                     <input type="submit" value="Add Plant" />
                 </form>

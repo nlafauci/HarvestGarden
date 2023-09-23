@@ -10,22 +10,24 @@ const plantSchema = new mongoose.Schema({
   },
   needsLight: {
     type: String,
-    required: true
+    required: true,
+    enum: ['Direct Sunight', 'Indirect Sunlight', 'Full Sunlight', 'Partial Sunlight']
   },
   needsWater: {
     type: String,
-    required: true
+    required: true,
+    enum: ['Water Daily', 'Water Every Other Day', 'Water Weekly', 'Water Every Other Week']
   },
   image: {
     type: String,
     default: 'https://images.unsplash.com/photo-1534620808146-d33bb39128b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
   },
+  description: {
+    type: String, 
+    required: true, 
+  },
   comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }]
 })
-
-// plantSchema.methods.getBakedBy = function() {
-//   return `${this.name} was baked with love by ${this.baker.name} who has been with us since ${this.baker.startDate.getFullYear()}.`
-// }
 
 plantSchema.methods.isIndoorParagraph = function() {
   return `and it ${this.isIndoor ? ' does ' : ' does not ' } grow indoors`

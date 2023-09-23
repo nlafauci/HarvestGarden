@@ -109,7 +109,7 @@ nav a:visited {
     height: 350px;
     object-fit: cover;
     border-radius: 10%;
-    margin-bottom: 50px;
+    padding: 20px;
 }
 
 .philosophy-container {
@@ -120,7 +120,7 @@ nav a:visited {
 }
 
 .philosophy {
-    padding: 1px;
+    padding: 20px;
     text-align: left;
     word-wrap: break-word;
     max-width: 850px;
@@ -131,6 +131,7 @@ nav a:visited {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
+    padding: 30px;
 }
 
 .articleOne {
@@ -206,10 +207,8 @@ nav a:visited {
 }
 
 #root {
-    /* min-height: 100%; */
     text-align: center;
     margin-top: 2em;
-    /* margin-bottom: 8em; */
 }
 
 a {
@@ -275,7 +274,8 @@ footer {
     font-size: 0.8em;
     border-top: 1px solid rgba(66, 66, 66, 0.688);
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
+    padding: 30px;
 }
 
 footer ul {
@@ -331,4 +331,10 @@ select {
 select:focus {
     background-color: rgb(28, 178, 28);
     border: 3px solid #555;
+}
+
+.showImg {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
 }
