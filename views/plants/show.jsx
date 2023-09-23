@@ -30,7 +30,26 @@ function show (data) {
                         </h4>
                     </div>
                 </div>
-                <h1>Showing off Plants</h1>
+                <h1>Comments</h1>
+                    <form method="POST" action={`/plants/${data.plant.id}/comment`}>
+                    <div className="form-group">
+                        <label htmlFor="content"> Content </label>
+                        <textarea name="content" className="form-control"> </textarea>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="author">Author</label>
+                        <input className="form-control" id="author" name="author" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="stars">Star Rating</label>
+                        <input type="range" step="1" min="1" max="5" className="form-range" id="stars" name="stars" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="state">Rant</label>
+                        <input className="form-check-input" id="rant" name="rant" />
+                    </div>
+                    <input className="btn btn-primary" type="submit" value="Add Comment" />
+            </form>
             </main>
         </Def>
     )
