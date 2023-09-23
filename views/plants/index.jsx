@@ -15,6 +15,10 @@ function index (data) {
     return (
       <Def user={data?.user}>
           <main>
+            <form action='/plants/search' className="flex justify-center">
+              <input type="search" name="query" id="query" className='outline-none px-2' />
+              <button type="submit" className=''>search</button>
+            </form>
               <h1>PLANTS INDEX PAGE</h1>
               <div className="row">{ plantsFormatted }</div>
           </main>
