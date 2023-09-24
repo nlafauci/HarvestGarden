@@ -15,7 +15,6 @@ function show(data) {
                     <h3>
                         <stong>- {c.author}</stong>
                     </h3>
-                    <h4>Rating: {c.stars}</h4>
                 </div>
             )
         })
