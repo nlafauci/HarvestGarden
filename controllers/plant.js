@@ -55,7 +55,6 @@ router.put('/:id', (req, res) => {
 
 router.post('/:id/comment', (req, res) => {
     console.log(req.body)
-    req.body.rant = req.body.rant ? true : false
     db.Plant.findById(req.params.id)
     .then(plant => {
         db.Comment.create(req.body)

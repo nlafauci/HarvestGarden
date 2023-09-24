@@ -7,25 +7,6 @@ function show(data) {
             No comments yet!
         </h3>
     )
-    let rating = (
-        <h3 className="inactive">
-            Not yet rated
-        </h3>
-    )
-    if (data.plant.comments.length) {
-        let sumRatings = data.plant.comments.reduce((tot, c) => {
-            return tot + c.stars
-        }, 0)
-        let averageRating = Math.round(sumRatings / data.plant.comments.length)
-        let stars = ''
-        for (let i = 0; i < averageRating; i++) {
-            stars += 'â­ï¸'
-        }
-        rating = (
-            <h3>
-                {stars} stars
-            </h3>
-        )
         comments = data.plant.comments.map(c => {
             return (
                 <div className="border">
@@ -79,10 +60,6 @@ function show(data) {
                     <div className="form-group">
                         <label htmlFor="author">Author</label>
                         <input className="form-control" id="author" name="author" />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="stars">Star Rating</label>
-                        <input type="range" step="1" min="1" max="5" className="form-range" id="stars" name="stars" />
                     </div>
                     <input className="btn btn-primary" type="submit" value="Add Comment" aria-label="Add Comment Button"/>
                 </form>

@@ -5,7 +5,6 @@ async function seed() {
 
     let comment = await db.Comment.create({
         author: 'Jason',
-        stars: 5.0,
         content: 'I recommend cultivating this plant because of its easy growing method.'
     })
 
