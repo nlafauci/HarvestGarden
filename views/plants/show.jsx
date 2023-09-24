@@ -36,8 +36,10 @@ function show(data) {
                         {data.plant.needsWater}
                         <br />
                         <h2>Light Amount: </h2>
-                        {data.plant.needsLight}
+                        {data.plant.needsLightParagraph()}
                         <br />
+                        <h3>Indoor/Outdoor</h3>
+                        {data.plant.isIndoorParagraph()}
                         <h2>Description: </h2>
                         <h3>
                             {data.plant.description}
