@@ -11,7 +11,7 @@ const plantSchema = new mongoose.Schema({
   needsLight: {
     type: String,
     required: true,
-    enum: ['Direct Sunight', 'Indirect Sunlight', 'Full Sunlight', 'Partial Sunlight']
+    enum: ['Direct Sunlight', 'Indirect Sunlight', 'Full Sunlight', 'Partial Sunlight']
   },
   needsWater: {
     type: String,
