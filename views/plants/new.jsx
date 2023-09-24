@@ -44,7 +44,7 @@ function new_plant(data) {
                     </div>
                     <div>
                         <label htmlFor="isIndoor">Is it an indoor plant?</label>
-                        <input type="checkbox" id="isIndoor" name="isIndoor" defaultChecked/>
+                        <input type="checkbox" id="isIndoor" name="isIndoor"/>
                     </div>
                     <div>
                         <label htmlFor="description">Plant Description</label>

@@ -46,7 +46,12 @@ function edit_form(data) {
                     </div>
                     <div>
                         <label htmlFor="isIndoor">Is it an indoor plant?</label>
-                        <input type="checkbox" id="isIndoor" name="isIndoor"/>
+                        <input type="checkbox" id="isIndoor" name="isIndoor" defaultChecked={data.plant.isIndoor}/>
+                    </div>
+                    <div>
+                        <label htmlFor="description">Plant Description</label>
+                        <input id="description" name="description"
+                        defaultValue={data.plant.description} required/>
                     </div>
                     <input type="submit" value="Submit Changes" />
                 </form>

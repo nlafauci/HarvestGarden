@@ -100,8 +100,16 @@ router.delete('/:id', (req, res) => {
 
 
 // POST Create new Plant
-router.post('/', (req, res) => {
-    db.Plant.create(req.body)
+router.post('/', async (req, res) => {
+    if(req.body.isIndoor === 'on') {
+        req.body.isIndoor = true
+    } else {
+        req.body.isIndoor = false
+    }
+    
+    if(!req.body.image) req.body.image = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fnetworkofnature.org%2Fspecies%2Fwoody-plants%2F&psig=AOvVaw0-c9AifmZYM9OTWrmVdbcu&ust=1695579414331000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJDG-9erwYEDFQAAAAAdAAAAABAE'
+
+    await db.Plant.create(req.body)
     .then(() => {
       res.redirect('/plants')
     })
