@@ -6,14 +6,14 @@ db.Plant.deleteMany()
         isIndoor: false,
         needsLight: 'Full Sunlight',
         needsWater: 'Water Every Other Week',
-        image: 'https://assets.wfcdn.com/im/98531639/resize-h445%5Ecompr-r85/2413/241345336/Sonora+Desert+Saguaro+On+Plastic%2FAcrylic+by+Charles+Harker+Print.jpg',
+        image: 'https://images.unsplash.com/photo-1517025423291-770fb99ae547?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
         description: 'Loves to be a prick'
     }, {
         name: 'Aloe Vera',
         isIndoor: true,
         needsLight: 'Indirect Sunlight',
         needsWater: 'Water Weekly',
-        image: 'https://www.google.com/aclk?sa=l&ai=DChcSEwjh7f2BvLWBAxX3JrMAHQFABVoYABABGgJ5bQ&ase=2&gclid=CjwKCAjw6p-oBhAYEiwAgg2Pgo0JdcSJ23_LUlED72hs8MVfFPG757KM1M7WFH3ZCe2GphFzs8woaxoCo8wQAvD_BwE&sig=AOD64_1diL9OFIqIyrMIa5cHwLc8NqViaQ&ctype=5&nis=6&adurl&ved=2ahUKEwiXx-2BvLWBAxXeJ2IAHdlgAVMQvhd6BAgBEH0',
+        image: 'https://images.unsplash.com/photo-1614196141081-6ed6d393e273?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
         description:'I can fix him! Everyone needs a little healing.'
     }, {
         name: 'Fern',
@@ -21,7 +21,7 @@ db.Plant.deleteMany()
         needsLight: 'Direct Sunlight',
         needsWater: 'Water Daily',
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQofNzQ5NggTZ3v4oyTZmrDpfS9xgr2otUgl_poUCpv5nV2zg-0uwb0BEZttoeQPtMDqc0&usqp=CAU',
-        description:'You/ve probably seen me on Phineas & Fern'
+        description:'You have probably seen me on Phineas & Fern'
     },{
         name: 'Carrot',
         isIndoor: false,
