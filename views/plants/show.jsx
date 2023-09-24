@@ -62,10 +62,10 @@ function show(data) {
                             {data.plant.description}
                         </h3>
                         <a href={`/plants/${data.plant._id}/edit`}>
-                            <button>Edit</button>
+                            <button aria-label="Edit Button">Edit</button>
                         </a>
                         <form action={`/plants/${data.plant._id}?_method=DELETE`} method='POST'>
-                            <input type='submit' value='DELETE' />
+                            <input type='submit' value='DELETE' aria-label="Delete Button"/>
                         </form>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ function show(data) {
                         <label htmlFor="stars">Star Rating</label>
                         <input type="range" step="1" min="1" max="5" className="form-range" id="stars" name="stars" />
                     </div>
-                    <input className="btn btn-primary" type="submit" value="Add Comment" />
+                    <input className="btn btn-primary" type="submit" value="Add Comment" aria-label="Add Comment Button"/>
                 </form>
             </main>
         </Def>

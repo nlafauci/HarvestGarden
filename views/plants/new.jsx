@@ -16,7 +16,6 @@ function new_plant(data) {
                         <select 
                         id="needsLight" 
                         name="needsLight"
-                        // value={data.plant.needsLight} 
                         onChange={(event) => {
                             data.plant.needsLight = event.target.value
                         }}
@@ -51,7 +50,7 @@ function new_plant(data) {
                         <label htmlFor="description">Plant Description</label>
                         <input id="description" name="description" required/>
                     </div>
-                    <input type="submit" value="Add Plant" />
+                    <input type="submit" value="Add Plant" aria-label="Add New Plant Button" />
                 </form>
             </main>
         </Def>

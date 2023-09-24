@@ -18,7 +18,7 @@ function home(data) {
             <p>Growing for a new tomorrow.</p>
             <p>HarvestGarden is your home for finding out how to grow and cultivate plants in your collection and the great outdoors.</p>
             <a href="/plants">
-              <button className="btn btn-danger btn-lg">Learn Now!</button>
+              <button className="btn btn-danger btn-lg" aria-label="Button directing user to HarvestGarden plant database">Learn Now!</button>
             </a>
           </div>
         </div>
@@ -30,7 +30,7 @@ function home(data) {
               Photo by <a href="https://unsplash.com/@dreamcatchlight">Diana Light</a> on <a href="https://unsplash.com/photos/vGjGvtSfys4">Unsplash</a>
             </div>
             <div className="container">
-              <h4>Our Mission</h4>
+              <h1>Our Mission</h1>
               <p>This page started on the foundation that we wanted to educate, encourage, and progress plant cultivation from where it currently stands. We believe that gardening and agriculture are the key to providing for a better future and want to help support farmers, gardeners, and others who share in that same vision. </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ function home(data) {
               Photo by <a href="https://unsplash.com/@dirtjoy">Zoe Schaeffer</a> on <a href="https://unsplash.com/photos/vGjGvtSfys4">Unsplash</a>
             </div>
             <div className="container">
-              <h4>Services</h4>
+              <h1>Services</h1>
               <p>This site includes plant species and subspecies, water and light specifications of plants, and whether these plants are best suited for indoors and outdoors. Viewers can comment and submit queries about their specific methods of growing these plants, which are moderated by the site team. </p>
             </div>
           </div>
