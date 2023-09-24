@@ -7,6 +7,7 @@ function show(data) {
             No comments yet!
         </h3>
     )
+    if (data.plant.comments.length) {
         comments = data.plant.comments.map(c => {
             return (
                 <div className="border">
