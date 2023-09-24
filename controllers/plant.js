@@ -43,17 +43,22 @@ router.get('/:id/edit', (req, res) => {
         })
 })
 
-router.put('/:id', (req, res) => {
-    db.Plant.findByIdAndUpdate(req.params.id, req.body)
-    .then(() => {
-        res.redirect(`/plants/${req.params.id}`)
-    })
-    .catch(err => {
-        console.log('err', err)
-        res.render('error404')
-    })
-})
+// PUT update plants
+router.put('/:id', async (req, res) => {
+    const { id } = req.params
+    if(req.body.isIndoor === 'on') {
+        req.body.isIndoor = true
+    } else {
+        req.body.isIndoor = false
+    }
+    
+    if(!req.body.image) req.body.image = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fnetworkofnature.org%2Fspecies%2Fwoody-plants%2F&psig=AOvVaw0-c9AifmZYM9OTWrmVdbcu&ust=1695579414331000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJDG-9erwYEDFQAAAAAdAAAAABAE'
 
+    await db.Plant.findByIdAndUpdate(id, req.body)
+    res.redirect(`/plants/${id}`)
+ })
+
+ // POST add comment
 router.post('/:id/comment', (req, res) => {
     console.log(req.body)
     db.Plant.findById(req.params.id)
@@ -93,17 +98,32 @@ router.delete('/:id', (req, res) => {
         })
 })
 
+
 // POST Create new Plant
-// router.post('/', (req, res) => {
-//     db.Plant.create(req.body)
-//     .then(() => {
-//       res.redirect('/plants/index')
-//     })
-//     .catch(err => {
-//       console.log('err', err)
-//       res.render('error404')
-//     })
-// })
+router.post('/', (req, res) => {
+    db.Plant.create(req.body)
+    .then(() => {
+      res.redirect('/plants')
+    })
+    .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+    })
+})
+
+
+ //GET 404 page
+ router.get('/*', (req, res) => {
+    db.Plant.find()
+    .then((plants) => {
+        res.render('plants/index', { plants })
+    })
+    .catch(err => {
+        console.log(err)
+        res.render('error404')
+      })
+})
+
 
 
 module.exports = router
