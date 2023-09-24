@@ -22,6 +22,7 @@ router.get('/new', (req, res) => {
 // GET Plant by Id
 router.get('/:id', (req, res) => {
     db.Plant.findById(req.params.id)
+    .populate('comments')
     .then(plant => {
         res.render('plants/show', { plant })
     })
