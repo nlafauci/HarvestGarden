@@ -107,7 +107,7 @@ router.post('/', async (req, res) => {
         req.body.isIndoor = false
     }
     
-    if(!req.body.image) req.body.image = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fnetworkofnature.org%2Fspecies%2Fwoody-plants%2F&psig=AOvVaw0-c9AifmZYM9OTWrmVdbcu&ust=1695579414331000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJDG-9erwYEDFQAAAAAdAAAAABAE'
+    if(!req.body.image) req.body.image = undefined
 
     await db.Plant.create(req.body)
     .then(() => {
