@@ -42,10 +42,10 @@ function show(data) {
                         <h3>
                             {data.plant.description}
                         </h3>
-                        <a href={`/plants/${data.plant._id}/edit`}>
+                        <a href={`/plants/${data.plant.id}/edit`}>
                             <button aria-label="Edit Button">Edit</button>
                         </a>
-                        <form action={`/plants/${data.plant._id}?_method=DELETE`} method='POST'>
+                        <form action={`/plants/${data.plant.id}?_method=DELETE`} method='POST'>
                             <input type='submit' value='DELETE' aria-label="Delete Button"/>
                         </form>
                     </div>
