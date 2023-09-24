@@ -33,10 +33,10 @@ function show(data) {
                     <div className="col-sm-6">
                         <h1>{data.plant.name}</h1>
                         <h2>Water Amount: </h2>
-                        {data.plant.needsLight}
+                        {data.plant.needsWater}
                         <br />
                         <h2>Light Amount: </h2>
-                        {data.plant.needsWater}
+                        {data.plant.needsLight}
                         <br />
                         <h2>Description: </h2>
                         <h3>
