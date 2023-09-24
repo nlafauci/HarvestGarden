@@ -46,7 +46,7 @@ function Def(html) {
                 <img src="../images/HGFavicon.png" alt="HarvestGarden Logo" />
               </p>
               <div id="subtitle">
-                We love our plant community!
+                <b>We love our plant community!</b>
               </div>
             </span>
           </div>
