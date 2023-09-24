@@ -31,6 +31,17 @@ router.get('/:id', (req, res) => {
     })
 })
 
+// GET Edit Plant Form 
+router.get('/:id/edit', (req, res) => {
+    db.Plant.findById(req.params.id)
+        .then(plant => {
+            res.render('plants/edit', { plant })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+})
+
 router.put('/:id', (req, res) => {
     db.Plant.findByIdAndUpdate(req.params.id, req.body)
     .then(() => {
@@ -69,6 +80,18 @@ router.post('/:id/comment', (req, res) => {
         res.render('error404')
     })
   })
+
+// DELETE route 
+router.delete('/:id', (req, res) => {
+    db.Plant.findByIdAndDelete(req.params.id)
+        .then(() => {
+            res.redirect('/plants')
+        })
+        .catch(err => {
+            console.log('err', err)
+            res.render('error404')
+        })
+})
 
 // POST Create new Plant
 // router.post('/', (req, res) => {
