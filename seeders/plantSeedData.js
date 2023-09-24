@@ -1,24 +1,27 @@
 const db = require('../models');
-db.Place.deleteMany()
+db.Plant.deleteMany()
 .then(() => {
     db.Plant.create([{
         name: 'Saguaro Cactus',
         isIndoor: false,
-        needsLight: '9',
-        needsWater: '2',
-        image: 'https://assets.wfcdn.com/im/98531639/resize-h445%5Ecompr-r85/2413/241345336/Sonora+Desert+Saguaro+On+Plastic%2FAcrylic+by+Charles+Harker+Print.jpg'
+        needsLight: 'Full Sunlight',
+        needsWater: 'Water Every Other Week',
+        image: 'https://assets.wfcdn.com/im/98531639/resize-h445%5Ecompr-r85/2413/241345336/Sonora+Desert+Saguaro+On+Plastic%2FAcrylic+by+Charles+Harker+Print.jpg',
+        description: 'Loves to be a prick'
     }, {
         name: 'Aloe Vera',
-        isIndoor: false,
-        needsLight: '6',
-        needsWater: '5',
-        image: 'https://www.google.com/aclk?sa=l&ai=DChcSEwjh7f2BvLWBAxX3JrMAHQFABVoYABABGgJ5bQ&ase=2&gclid=CjwKCAjw6p-oBhAYEiwAgg2Pgo0JdcSJ23_LUlED72hs8MVfFPG757KM1M7WFH3ZCe2GphFzs8woaxoCo8wQAvD_BwE&sig=AOD64_1diL9OFIqIyrMIa5cHwLc8NqViaQ&ctype=5&nis=6&adurl&ved=2ahUKEwiXx-2BvLWBAxXeJ2IAHdlgAVMQvhd6BAgBEH0'
+        isIndoor: true,
+        needsLight: 'Indirect Sunlight',
+        needsWater: 'Water Weekly',
+        image: 'https://www.google.com/aclk?sa=l&ai=DChcSEwjh7f2BvLWBAxX3JrMAHQFABVoYABABGgJ5bQ&ase=2&gclid=CjwKCAjw6p-oBhAYEiwAgg2Pgo0JdcSJ23_LUlED72hs8MVfFPG757KM1M7WFH3ZCe2GphFzs8woaxoCo8wQAvD_BwE&sig=AOD64_1diL9OFIqIyrMIa5cHwLc8NqViaQ&ctype=5&nis=6&adurl&ved=2ahUKEwiXx-2BvLWBAxXeJ2IAHdlgAVMQvhd6BAgBEH0',
+        description:'I can fix him! Everyone needs a little healing.'
     }, {
         name: 'Fern',
-        isIndoor: false,
-        needsLight: '4',
-        needsWater: '10',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQofNzQ5NggTZ3v4oyTZmrDpfS9xgr2otUgl_poUCpv5nV2zg-0uwb0BEZttoeQPtMDqc0&usqp=CAU'
+        isIndoor: true,
+        needsLight: 'Direct Sunlight',
+        needsWater: 'Water Daily',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQofNzQ5NggTZ3v4oyTZmrDpfS9xgr2otUgl_poUCpv5nV2zg-0uwb0BEZttoeQPtMDqc0&usqp=CAU',
+        description:'You/ve probably seen me on Phineas & Fern'
     }, {
         name: 'Carrot',
         isIndoor: false,
