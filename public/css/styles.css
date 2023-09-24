@@ -1,14 +1,15 @@
 body {
     text-align: center;
     font-weight: bold;
-    background-color: white;
+    background: url('https://img.freepik.com/free-photo/top-view-gardening-soil_23-2148826057.jpg?w=1060&t=st=1695490937~exp=1695491537~hmac=0c08974c59f90f84f870fc2611e053b190fbd9f0589a48d931910c35196f9a7b');
     font-family: Prompt;
 }
 
 main {
     margin-right: 20px;
     margin-left: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255);
+    padding: 30px;
 }
 
 nav {
@@ -203,7 +204,7 @@ nav a:visited {
 }
 
 .container {
-    padding: 2px 16px;
+    padding: 20px 16px;
 }
 
 #root {
@@ -266,16 +267,16 @@ h1 {
     margin: 10 auto;
     padding: 2em;
     font-size: 1.3rem;
-    border: 1px solid black;
 }
 
 footer {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.8em;
+    font-size: 1em;
     border-top: 1px solid rgba(66, 66, 66, 0.688);
     width: 100%;
     margin-top: 30px;
     padding: 30px;
+    background-color: rgba(255, 255, 255);
 }
 
 footer ul {
@@ -298,8 +299,8 @@ footer ul li a {
 }
 
 #subtitle {
-    font-size: x-small;
-    font-weight: lighter;
+    font-size: 12px;
+    font-weight: bolder;
 }
 
 form {
@@ -337,4 +338,11 @@ select:focus {
     height: 250px;
     width: 250px;
     object-fit: cover;
+}
+
+marquee {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgreen;
+    background-color: rgb(127, 255, 136);
 }
