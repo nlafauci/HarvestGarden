@@ -31,11 +31,15 @@ const plantSchema = new mongoose.Schema({
 })
 
 plantSchema.methods.isIndoorParagraph = function() {
-  return `and it ${this.isIndoor ? ' does ' : ' does not ' } grow indoors`
+  return `This plant ${this.isIndoor ? ' does ' : ' does not ' } grow indoors`
 }
 
 plantSchema.methods.needsLightParagraph = function() {
-    return `${this.needsLight} needs light`
+    return `It needs ${this.needsLight}`
+  }
+
+plantSchema.methods.needsWaterParagraph = function() {
+    return `It needs ${this.needsWater}`
   }
 
 module.exports = mongoose.model('Plant', plantSchema)

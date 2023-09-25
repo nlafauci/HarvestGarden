@@ -45,12 +45,6 @@ function home(data) {
               <p>This site includes plant species and subspecies, water and light specifications of plants, and whether these plants are best suited for indoors and outdoors. Viewers can comment and submit queries about their specific methods of growing these plants, which are moderated by the site team. </p>
             </div>
           </div>
-          {/* <div className="container">
-            <div className="plantsOnHome">
-              <h2><i>Featured Plants</i></h2>
-              <p>Take a look at some of the community's most recent plentiful features.</p>
-            </div>
-          </div> */}
         </div>
       </main>
     </Def>
