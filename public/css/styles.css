@@ -5,10 +5,6 @@ body {
     font-family: Prompt;
 }
 
-.custom-form {
-    background-color: white; /* Replace with your desired color */
-  }
-
 main {
     margin-right: 20px;
     margin-left: 20px;
@@ -235,10 +231,6 @@ h1 {
     margin-bottom: 35px;
 }
 
-
-    
-
-
 .btn {
     background-color: rgb(33, 212, 72);
     border-color: rgb(33, 212, 72);
@@ -354,4 +346,3 @@ marquee {
     color: darkgreen;
     background-color: rgb(127, 255, 136);
 }
-

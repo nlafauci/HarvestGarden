@@ -7,12 +7,6 @@ export default function SearchResult({ user, plantData, query }) {
     }
     return (
         <Def user={user}>
-
-
-
-
-
-
             <h1>Plant Search Results</h1>
             {plantData && plantData.length > 0 &&
                 <ul className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -35,7 +29,7 @@ export default function SearchResult({ user, plantData, query }) {
                                     <input type="hidden" name="needsLight" value={'_'} />
                                     <input type="hidden" name="needsWater" value={'_'} />
                                     <input type="hidden" name="image" value={plant?.image_url} />
-                            
+
                                     <button type='submit' className="py-1 px-3 bg-blue-600 text-white mt-2" 
                                     onClick="addPlantToProfile()" 
                                     // onClick={() => {
@@ -43,7 +37,6 @@ export default function SearchResult({ user, plantData, query }) {
                                     //     addPlantToProfile()
                                     // }}
                                     >Add to profile</button>
-                                    
                                 </form>
                             </li>
                         )
