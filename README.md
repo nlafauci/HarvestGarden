@@ -1,6 +1,6 @@
 # PRESENTING HarvestGarden: A literal community garden
 
-HarvestGarden is a gardeners dream come true! Plant-enthusiasts can search an extensive plant database for a list of crops for the season, advice, or seeds for purchase! Keep your green thumbs busy by sharing a post featuring your colossal harvest of tomatoes or even dandelions. Look at your garden grow by keeping track daily with your Field Notes journal! If your post is popular enough, it could even be featured on the home page!
+HarvestGarden is a gardeners dream come true! Plant-enthusiasts can search an extensive plant database for a list of crops for the season and advice on how to grow these crops. Keep your green thumbs busy by sharing a post featuring your colossal harvest of tomatoes or even dandelions. If your post is popular enough, it could even be featured on the home page!
 
 
 ## Key Features: 
@@ -31,9 +31,9 @@ HarvestGarden is a gardeners dream come true! Plant-enthusiasts can search an ex
 | --- | --- | --- | --- | --- | --- |
 | **Plants** | name | photo | growth stage | plant type | season planted | watering amount | lighting amount |
 
-## Installations: 
+<!-- ## Installations: 
 
-...
+... -->
 
 ## Technologies: 
 <!-- BootStrap -->
