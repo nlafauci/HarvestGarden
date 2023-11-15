@@ -1,7 +1,11 @@
-const React = require('react')
-const Def = require('./default')
+import React, { ReactNode } from 'react';
+import Def from './default';
 
-function home(data) {
+interface HomeProps {
+  data: any; // This will need to be adjusted to our data
+}
+
+function Home({ data }: HomeProps): JSX.Element {
   return (
     <Def>
       <main>
@@ -48,7 +52,7 @@ function home(data) {
         </div>
       </main>
     </Def>
-  )
+  );
 }
 
-module.exports = home
+export default Home;
