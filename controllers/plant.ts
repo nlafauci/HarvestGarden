@@ -1,50 +1,53 @@
-const router = require('express').Router()
-const db = require('../models')
+import express, { Request, Response } from 'express';
+import db from '../models'; 
+
+const router = express.Router();
+
 
 //GET All Plants
-router.get('/', (req, res) => {
+router.get('/', (_req: Request, res: Response) => {
     db.Plant.find()
-    .then((plants) => {
+    .then((plants: any) => {
         res.render('plants/index', { plants })
     })
-    .catch(err => {
+    .catch((err: any) => {
         console.log(err)
         res.render('error404')
       })
 })
 
 //GET New Plant Form
-router.get('/new', (req, res) => {
+router.get('/new', (_req: Request, res: Response) => {
     const plants = db.Plant.find()
     res.render('plants/new', { plants })
 })
 
 // GET Plant by Id
-router.get('/:id', (req, res) => {
+router.get('/:id', (req: Request, res: Response) => {
     db.Plant.findById(req.params.id)
     .populate('comments')
-    .then(plant => {
+    .then((plant: any) => {
         res.render('plants/show', { plant })
     })
-    .catch(err => {
+    .catch((err: any) => {
         console.log('err', err)
         res.render('error404')
     })
 })
 
 // GET Edit Plant Form 
-router.get('/:id/edit', (req, res) => {
+router.get('/:id/edit', (req: Request, res: Response) => {
     db.Plant.findById(req.params.id)
-        .then(plant => {
+        .then((plant: any) => {
             res.render('plants/edit', { plant })
         })
-        .catch(err => {
+        .catch((_err: any) => {
             res.render('error404')
         })
 })
 
 // PUT update plants
-router.put('/:id', async (req, res) => {
+router.put('/:id', async (req: Request, res: Response) => {
     const { id } = req.params
     if(req.body.isIndoor === 'on') {
         req.body.isIndoor = true
@@ -59,40 +62,40 @@ router.put('/:id', async (req, res) => {
  })
 
  // POST add comment
-router.post('/:id/comment', (req, res) => {
+router.post('/:id/comment', (req: Request, res: Response) => {
     console.log(req.body)
     db.Plant.findById(req.params.id)
-    .then(plant => {
+    .then((plant: any) => {
         db.Comment.create(req.body)
-        .then(comment => {
+        .then((comment: any) => {
             plant.comments.push(comment.id)
             plant.save()
             .then(() => {
               console.log(["test"])
                 res.redirect(`/plants/${req.params.id}`)
             })
-            .catch(err => {
+            .catch((err: any) => {
               console.log(err)
               res.render('error404')
               })
           
         })
-        .catch(err => {
+        .catch((_err: any) => {
             res.render('error404')
         })
     })
-    .catch(err => {
+    .catch((_err: any) => {
         res.render('error404')
     })
   })
 
 // DELETE route 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', (req: Request, res: Response) => {
     db.Plant.findByIdAndDelete(req.params.id)
         .then(() => {
             res.redirect('/plants')
         })
-        .catch(err => {
+        .catch((err: any) => {
             console.log('err', err)
             res.render('error404')
         })
@@ -100,7 +103,7 @@ router.delete('/:id', (req, res) => {
 
 
 // POST Create new Plant
-router.post('/', async (req, res) => {
+router.post('/', async (req: Request, res: Response) => {
     if(req.body.isIndoor === 'on') {
         req.body.isIndoor = true
     } else {
@@ -113,7 +116,7 @@ router.post('/', async (req, res) => {
     .then(() => {
       res.redirect('/plants')
     })
-    .catch(err => {
+    .catch((err: any) => {
       console.log('err', err)
       res.render('error404')
     })
@@ -121,12 +124,12 @@ router.post('/', async (req, res) => {
 
 
  //GET 404 page
- router.get('/*', (req, res) => {
+ router.get('/*', (_req: Request, res: Response) => {
     db.Plant.find()
-    .then((plants) => {
+    .then((plants: any) => {
         res.render('plants/index', { plants })
     })
-    .catch(err => {
+    .catch((err: any) => {
         console.log(err)
         res.render('error404')
       })
