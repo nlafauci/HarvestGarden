@@ -11,7 +11,7 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "start": "npx nodemon server.js"
+    "start": "npx nodemon server.ts"
   },
   "name": "harvestgarden",
   "version": "1.0.0",
