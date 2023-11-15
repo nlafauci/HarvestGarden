@@ -1,4 +1,4 @@
-const db = require('../models')
+import db from '../models'; 
 
 async function seed() {
     let plant = await db.Plant.findOne({ name: 'Fern' })

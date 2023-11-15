@@ -1,8 +1,13 @@
-const mongoose = require('mongoose')
+import mongoose, { Document, Schema } from 'mongoose';
 
-let commentSchema = new mongoose.Schema({
+interface Comment extends Document {
+    author: string;
+    content: string;
+}
+
+const commentSchema: Schema<Comment> = new mongoose.Schema({
     author: { type: String, default: 'Anonymous' },
-    content: { type: String, default: '' }
-})
-  
-module.exports = mongoose.model('Comment', commentSchema)
+    content: { type: String, default: '' },
+});
+
+export default mongoose.model<Comment>('Comment', commentSchema);

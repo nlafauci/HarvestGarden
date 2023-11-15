@@ -1,5 +1,5 @@
-const React = require('react')
-const Def = require('../default.jsx')
+import React from 'react';
+import Def from '../default.tsx';
 
 function edit_form(data) {
     return (
